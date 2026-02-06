@@ -85,8 +85,11 @@ These are required by `app.py`:
 
 ## MongoDB data model (required shape)
 
-The script reads from:
+### Database
+- **Name:** `<your_database_name>`
 
+### Collection
+- **Name:** `<your_collection_name>`
 
 Each user document should look like:
 
