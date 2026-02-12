@@ -35,7 +35,7 @@ def send_html_email(sender_email, sender_password, receiver_email, subject, html
     msg["To"] = receiver_email
 
     msg.attach(MIMEText(html_content, "html"))
-
+    server = None
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
