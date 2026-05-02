@@ -3,7 +3,6 @@ name: Daily Coding Email Service
 on:
   repository_dispatch:
     types: [trigger-email]
-  workflow_dispatch:
 
 jobs:
   send-emails:
