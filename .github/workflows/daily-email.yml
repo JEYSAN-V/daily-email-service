@@ -1,8 +1,8 @@
 name: Daily Coding Email Service
 
 on:
-  schedule:
-    - cron: "30 22 * * *"
+  repository_dispatch:
+    types: [trigger-email]
   workflow_dispatch:
 
 jobs:
